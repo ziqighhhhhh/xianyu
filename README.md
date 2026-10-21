@@ -7,6 +7,7 @@ Flask + SQLite + 原生 JS 单页后台，聚焦「账号 → 商品 → 订单 
 > 不包含原产品的任何代码、资源或授权逻辑。真实闲鱼协议接入需要自行实现并遵守平台规则。
 
 > 当前版本 **1.0.0**（首个自托管正式版），变更与已知限制见 [CHANGELOG.md](CHANGELOG.md)。
+> 详细部署与操作手册见 **[使用攻略.md](使用攻略.md)**。
 
 ![dashboard](shots/dashboard.png)
 
@@ -122,6 +123,7 @@ fishclone/
 │  ├─ sw.js                   # Service Worker（应用壳缓存）
 │  └─ icons/                  # PWA 图标
 ├─ CHANGELOG.md              # 版本与已知限制
+├─ 使用攻略.md               # 部署、接入、运营与排障手册
 ├─ scripts/                  # lwp_probe.py / smoke.py / smoke_http.py / smoke_pwa.js
 ├─ tests/test_core.py         # 核心接口/引擎测试
 ├─ tests/test_p1.py           # 通知、备份恢复、媒体、限流测试
