@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FishAutoPro Clone · 闲鱼自动化工作台</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0d9488">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+</head>
+<body>
+  <div id="boot" class="boot-screen">
+    <div class="boot-logo">🐟</div>
+    <div class="boot-text">正在加载 FishAutoPro Clone…</div>
+  </div>
+  <div id="app" class="app hidden"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root"></div>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

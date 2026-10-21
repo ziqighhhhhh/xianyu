@@ -1,0 +1,6 @@
+Flask>=3.1,<4
+httpx>=0.28,<1
+waitress>=3.0,<4
+Pillow>=11.0,<12
+cryptography>=43,<47
+qrcode[pil]>=8.0,<9

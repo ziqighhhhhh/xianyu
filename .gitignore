@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+data/*
+!data/.gitkeep
+.edge-*/
+.edge-profile/
+session-token.txt
+demo-cookies.txt
+htmlcov/
+.env

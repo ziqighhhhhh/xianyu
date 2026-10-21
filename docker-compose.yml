@@ -1,0 +1,12 @@
+services:
+  fishautopro-clone:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      FAP_HOST: "0.0.0.0"
+      FAP_PORT: "8000"
+      FAP_DATA_DIR: "/data"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
